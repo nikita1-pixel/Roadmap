@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio V1</title>
+    <title>Dev Portfolio | Clean & Minimal</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <article>
-        <header class="navbar">
-                <div class="logo">Portfolio</div>
-                <nav class="navbar">
-                    <ul class="nav-links">
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
 
-            <main>
-            
-                <section id="about" class="hero">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm a passionate developer with experience in web development, software engineering, and data science. I enjoy creating innovative solutions and learning new technologies.</p>
-                    <div class="tags">
-                        <span>Learning: HTML5</span>
-                        <span>CSS3 (Flex/Grid)</span>
-                        <span>Responsive Design</span>
-                    </div>
-            </section>
-            <section id="projects" class="project-grid">
-                <h2>Projects</h2>
-                <div class="grid-container">
-                    <!-- Project cards will go here -->
-                    <div class="empty-state">
-                        <p>Exciting projects coming soon...</p>
+<body>
+
+    <header class="main-nav">
+        <div class="container">
+            <h1 class="logo">Dev<span>Portfolio</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h2>Building digital experiences with <span class="highlight">precision.</span></h2>
+            <p>I specialize in building clean, responsive interfaces and exploring modern web architecture.</p>
+        </section>
+
+        <!-- PROJECT GRID SECTION -->
+        <section id="projects" class="section">
+            <h3 class="section-title">Selected Projects</h3>
+            <div class="project-grid">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <h4>Project One</h4>
+                        <p>A deep dive into CSS Grid and responsive architecture.</p>
                     </div>
                 </div>
-            </section>
-            <section id="contact" class="contact">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-                <a href="mailto:yourname@email.com" class="btn">Send an Email</a>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright &copy; 2023 My Portfolio. All rights reserved.</p>
-        </footer>
-    </article>
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <h4>Project Two</h4>
+                        <p>Exploring accessible form design and user flows.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <h4>Project Three</h4>
+                        <p>Minimalist UI kit built with vanilla HTML/CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+        <section id="contact" class="section">
+            <h3 class="section-title">Get in Touch</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Topic</label>
+                    <select id="subject" name="subject">
+                        <option value="collaboration">Collaboration</option>
+                        <option value="hiring">Hiring</option>
+                        <option value="other">Just saying hi!</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Portfolio. Built with focus on Accessibility.</p>
+    </footer>
+
 </body>
+
 </html>
